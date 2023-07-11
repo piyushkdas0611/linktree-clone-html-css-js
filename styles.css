@@ -5,6 +5,7 @@
 }
 
 body {
+    font-size: 16px;
     background-color: rgb(10, 10, 10);
     color: rgb(240, 240, 240);
     display: flex;
@@ -24,9 +25,9 @@ header {
 }
 
 .share-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
     background-color: rgb(240, 240, 240);
     display: flex;
     justify-content: center;
@@ -66,6 +67,11 @@ h1 {
 a {
     text-decoration: none;
     color: rgb(240, 240, 240);
+    transition: all 0.5s;
+}
+a:hover {
+    scale: 1.1;
+    transition: all 0.5s;
 }
 
 a:hover {
@@ -75,17 +81,18 @@ a:hover {
 .tile {
     width: 100%;
     background-color: rgb(37, 37, 37);
-    margin: 7px;
+    margin: 0.5rem;
     border-radius: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .tile-share-button {
-    margin: 8px;
-    width: 40px;
-    height: 40px;
+    margin: 0.6rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 20px;
     background-color: rgb(52, 52, 52);
     justify-self: flex-end;
@@ -95,7 +102,15 @@ a:hover {
 }
 
 .icon {
-    margin: 4px 16px;
-    width: 44px;
-    height: 44px;
+    margin: 0.7rem 1.4rem;
+    width: 3rem;
+    height: 3rem;
+}
+@media (max-width: 425px) {
+    body {
+        max-width: 425px;
+    }
+    a:hover {
+        scale: 1;
+    }
 }
